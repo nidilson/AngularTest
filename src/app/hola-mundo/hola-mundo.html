@@ -15,8 +15,12 @@
             <button type="submit" (click)="onIngresar($event)">Ingresar</button>
 
             <p class="extra-links">
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="#" (click)="onContrasena()">¿Olvidaste tu contraseña?</a>
+                @if(respuesta !== "") {
+                    <span>{{ respuesta }}</span>
+                }
             </p>
+
         </form>
     </div>
 
