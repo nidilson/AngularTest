@@ -1,0 +1,23 @@
+<div class="login-container">
+        <form class="login-form">
+            <h2>Iniciar Sesión</h2>
+
+            <div class="input-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="Ingrese su correo" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+            </div>
+
+            <button type="submit" (click)="onIngresar($event)">Ingresar</button>
+
+            <p class="extra-links">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </p>
+        </form>
+    </div>
+
+    <router-outlet></router-outlet>
